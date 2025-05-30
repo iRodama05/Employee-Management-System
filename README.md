@@ -9,3 +9,6 @@ An Employee Management System built in C++ addresses this challenge by creating 
 - Inheritance allows different employee types (e.g., Manager, Developer) to share common attributes (name, ID, base salary) while adding specialized fields (department, programming language). This avoids code duplication and improves maintainability.
 
 - Polymorphism enables dynamic salary calculations; for example, managers might receive a fixed bonus, while developers could earn incentives based on skills. This flexibility mirrors real payroll systems.
+
+
+![Employee](https://github.com/user-attachments/assets/2d895298-b96a-4f29-b01f-6d29219ea1b5)

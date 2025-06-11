@@ -4,16 +4,28 @@
 #include "Employee.h"
 
 class Developer : public Employee {
-private:
-    std::string programmingLanguage;
+protected:
+    string programmingLanguage;
     double skillBonus;
     int numSkills;
 
 public:
-    Developer(std::string name, int id, double baseSalary, std::string language, double skillBonus, int numSkills);
+    // Constructor
+    Developer(string name, int id, double baseSalary, string programmingLanguage, double skillBonus, int numSkills);
+
+    // Getters and setters
+    string getProgrammingLanguage() const;
+    double getSkillBonus() const;
+    int getNumSkills() const;
+
+    void setProgrammingLanguage(string lang);
+    void setSkillBonus(double bonus);
+    void setNumSkills(int n);
+    void setNumSkills(vector<string> skills);
+
+    // Overrides
     double calculateTotalSalary() const override;
-    void printInfo() const override;
-    std::string getProgrammingLanguage() const;
+    string getInfo() const override;
 };
 
 #endif

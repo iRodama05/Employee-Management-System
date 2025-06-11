@@ -4,14 +4,20 @@
 #include "Employee.h"
 
 class Intern : public Employee {
-private:
+protected:
     int durationMonths;
 
 public:
-    Intern(std::string name, int id, double baseSalary, int durationMonths);
-    double calculateTotalSalary() const override;
-    void printInfo() const override;
+    // Comstructor
+    Intern(string name, int id, double baseSalary, int durationMonths);
+
+    // Getter and setter
     int getDuration() const;
+    void setDuration(int months);
+
+    // Overrides
+    double calculateTotalSalary() const override;
+    string getInfo() const override;
 };
 
 #endif

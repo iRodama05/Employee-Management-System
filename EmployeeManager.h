@@ -1,19 +1,19 @@
 #ifndef EMPLOYEEMANAGER_H
 #define EMPLOYEEMANAGER_H
 
-#include <vector>
 #include "Employee.h"
 
 class EmployeeManager {
-private:
-    std::vector<Employee*> employees;
+protected:
+    vector<Employee*> employees;
 
 public:
     EmployeeManager();
-    ~EmployeeManager();
     void addEmployee(Employee* e);
-    std::vector<Employee*> getEmployees() const;
-    double getTotalPayroll() const;
+    vector<Employee*> searchById(int id) const;
+    bool removeById(int id);
+    vector<string> listEmployeeInfo() const;
+    double showTotalPayroll() const;
 };
 
 #endif

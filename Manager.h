@@ -4,15 +4,25 @@
 #include "Employee.h"
 
 class Manager : public Employee {
-private:
-    std::string department;
+protected:
+    string department;
     double fixedBonus;
 
 public:
-    Manager(std::string name, int id, double baseSalary, std::string department, double fixedBonus);
+    // Constructos
+    Manager(string name, int id, double baseSalary, string department, double fixedBonus);
+
+    // Getters
+    string getDepartment() const;
+    double getFixedBonus() const;
+
+    // setters
+    void setDepartment(string department);
+    void setFixedBonus(double bonus);
+
+    // Overrides
     double calculateTotalSalary() const override;
-    void printInfo() const override;
-    std::string getDepartment() const;
+    string getInfo() const override;
 };
 
 #endif

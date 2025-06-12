@@ -13,18 +13,22 @@ An Employee Management System built in C++ addresses this challenge by creating 
 ![Employee drawio (2)](https://github.com/user-attachments/assets/ccf2733c-3940-4886-8312-5a3f987ed0fc)
 
 ### Class descriptions
-#### Employee
+#### - Employee
 Defines the common interface and base properties for all types of employees. It ensures polymorphic behavior through virtual methods. It uses protected attributes such as name, id and baseSalary; public methods such as calculateTotalSalary(), getInfo(), calculateBonus(); and overloades operators as operator== (for comparing employees) and operator<< (for printing).
 
 #### Developer (inherits from Employee)
 Represents a software developer with additional attributes related to programming skills. His attributes are programmingLanguage, skillBonus, numSkills; meanwhile their methods are setNumSkills(vector<string>) (implicitly counts skills), calculateTotalSalary() and getInfo().
 
-#### Manager
+#### - Manager
 Models a manager who receives a fixed bonus and is assigned to a department. Has a department, a fixedBonus an various methods as alculateTotalSalary() and getInfo().
 
-#### Intern
+#### - Intern
 Represents an intern, with compensation tied to the internship duration. Has durationMonths and methodes such as getDuration(), setDuration() and getInfo().
 
-#### EmployeeManager
+#### - EmployeeManager
 Manages a collection of employees. Handles operations like adding, searching, listing, removing, and calculating payroll.
 
+### Known Issues
+1. Typing a number outside the selection menu (ex. 8) it will just show the menu again and wait for a valid imput.
+2. Typing a wrong data type on an attribute (ex. String on an int attribute) will completely break the code entering a infinite loop of showing the menu (don't know how to fix this in time)
+3. Not actually an issue, but more of a clarification: If you show the employee list, but there is none, it will appear to show the menu again. This is not exactly the case; it will just show a blank line. It will do teh same with ID search.

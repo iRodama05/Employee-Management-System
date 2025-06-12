@@ -13,17 +13,18 @@ An Employee Management System built in C++ addresses this challenge by creating 
 ![Employee drawio (2)](https://github.com/user-attachments/assets/ccf2733c-3940-4886-8312-5a3f987ed0fc)
 
 ### Class descriptions
-##### Employee
+#### Employee
 Defines the common interface and base properties for all types of employees. It ensures polymorphic behavior through virtual methods. It uses protected attributes such as name, id and baseSalary; public methods such as calculateTotalSalary(), getInfo(), calculateBonus(); and overloades operators as operator== (for comparing employees) and operator<< (for printing).
 
-##### Developer (inherits from Employee)
+#### Developer (inherits from Employee)
 Represents a software developer with additional attributes related to programming skills. His attributes are programmingLanguage, skillBonus, numSkills; meanwhile their methods are setNumSkills(vector<string>) (implicitly counts skills), calculateTotalSalary() and getInfo().
 
-##### Manager
+#### Manager
 Models a manager who receives a fixed bonus and is assigned to a department. Has a department, a fixedBonus an various methods as alculateTotalSalary() and getInfo().
 
-##### Intern
+#### Intern
 Represents an intern, with compensation tied to the internship duration. Has durationMonths and methodes such as getDuration(), setDuration() and getInfo().
 
-##### EmployeeManager
+#### EmployeeManager
 Manages a collection of employees. Handles operations like adding, searching, listing, removing, and calculating payroll.
+

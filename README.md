@@ -45,5 +45,6 @@ If the option to create an employee is selected, a new menu will appear, gradual
 1. Typing a number outside the selection menu (ex. 8) it will just show the menu again and wait for a valid imput.
 2. Typing a wrong data type on an attribute (ex. String on an int attribute) will completely break the code entering a infinite loop of showing the menu (don't know how to fix this in time)
 3. Not actually an issue, but more of a clarification: If you show the employee list, but there is none, it will appear to show the menu again. This is not exactly the case; it will just show a blank line. It will do teh same with ID search.
-4. Not actually an error, but the code is compatible with negative numbers, so Employees can have negative salaries (they owe yo :o).
+4. Not actually an error, but the code is compatible with negative numbers, so Employees can have negative salaries (they owe you :o).
 5. Listing multiples values on a single attribute (Ex. "Juanito Perez" on 'name') will also break the code and start the loop of doom and dispair.
+6. Breaking the code with a different method outside the listed ones will make me sad :(

@@ -30,12 +30,14 @@ Manages a collection of employees. Handles operations like adding, searching, li
 
 ### How to use
 After running the program, a text menu will appear in the terminal asking the user to enter the number corresponding to their selection.
+
 ![image](https://github.com/user-attachments/assets/9021a28c-c1c7-4f25-99f3-88be4628d082)
 
 
 Depending on the selection, a new menu will be opened or the requested result will be displayed.
 
 If the option to create an employee is selected, a new menu will appear, gradually requesting the corresponding information, such as name, salary, ID, etc. One area that can cause confusion is the skill bonus. Developers receive a skill bonus, which will be added to their salary depending on the number of skills.
+
 ![image](https://github.com/user-attachments/assets/4c27e103-ab71-4f04-8f3b-9f79591b52f7)
 
 
